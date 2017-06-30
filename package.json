@@ -1,0 +1,41 @@
+{
+  "name": "mathjs-expression-parser",
+  "version": "1.0.0",
+  "description": "Just the expression parser of mathjs",
+  "main": "index.js",
+  "directories": {
+    "dist": "dist",
+    "example": "example",
+    "test": "test"
+  },
+  "homepage": "http://mathjs.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josdejong/mathjs-expression-parser.git"
+  },
+  "scripts": {
+    "test": "mocha",
+    "mkdist": "mkdirp dist",
+    "bundle": "browserify ./index.js -s math -o dist/mathjs-expression-parser.js",
+    "minify": "uglifyjs --compress --mangle --source-map -o dist/mathjs-expression-parser.min.js -- dist/mathjs-expression-parser.js",
+    "build": "npm run mkdist && npm run bundle && npm run minify",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "mathjs",
+    "expression",
+    "parser"
+  ],
+  "author": "Jos de Jong",
+  "license": "MIT",
+  "dependencies": {
+    "mathjs": "3.*"
+  },
+  "devDependencies": {
+    "browserify": "14.4.0",
+    "mkdirp": "0.5.1",
+    "mocha": "3.4.2",
+    "uglify-js": "3.0.19",
+    "webpack": "3.0.0"
+  }
+}

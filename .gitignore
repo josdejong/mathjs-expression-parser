@@ -6,7 +6,3 @@ coverage
 node_modules
 *.log
 dist
-
-# for now, we just exclude package-lock.json though it's not best practice
-# until it's more stable 
-package-lock.json

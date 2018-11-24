@@ -4,7 +4,7 @@ Just want to use the expression parser of `mathjs` for simple, numeric calculati
 
 This custom build of `mathjs` contains just the expression parser and basic arithmetic functions for numbers. The expression parser contains full functionality for parsing, compiling, evaluating, and transforming expression trees. Support for Matrices, BigNumbers, Fractions, Complex numbers, Units, and all functions and constants that come with mathjs are excluded.
 
-The size of `mathjs-expression-parser` is `28 KiB` when minified and gzipped (about a quarter of the size of `mathjs`).
+The size of `mathjs-expression-parser` is `30 KiB` when minified and gzipped (about a quarter of the size of `mathjs`).
 
 
 ## Install

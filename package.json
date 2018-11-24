@@ -1,6 +1,6 @@
 {
   "name": "mathjs-expression-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Just the expression parser of mathjs",
   "main": "index.js",
   "directories": {
@@ -41,10 +41,10 @@
     "mathjs": "^5.2.3"
   },
   "devDependencies": {
-    "browserify": "14.4.0",
+    "browserify": "16.2.3",
     "mkdirp": "0.5.1",
-    "mocha": "3.4.2",
-    "uglify-js": "3.0.19",
-    "webpack": "3.0.0"
+    "mocha": "5.2.0",
+    "uglify-js": "3.4.9",
+    "webpack": "4.26.0"
   }
 }

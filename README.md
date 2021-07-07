@@ -7,7 +7,8 @@ You can now use mathjs itself directly to achieve the same:
 import { create, all } from 'mathjs/number'
 
 const math = create(all)
-console.log(add(2, 3)) // 5
+const result = math.evaluate('2.4 + sqrt(x)', {x : 16})
+console.log('result', result) // 6.4
 ```
 
 Read more: https://mathjs.org/docs/custom_bundling.html#numbers-only
@@ -37,7 +38,7 @@ npm install mathjs-expression-parser
 var math = require('mathjs-expression-parser')
 
 var expr = '2.4 + sqrt(x)';
-evaluate('result', math.eval(expr, {x : 16})); // 6.4
+console.log('result', math.eval(expr, {x : 16})); // 6.4
 ```
 
 ### browser
@@ -53,7 +54,7 @@ evaluate('result', math.eval(expr, {x : 16})); // 6.4
 
 <script>
   var expr = '2.4 + sqrt(x)';
-  evaluate('result', math.eval(expr, {x : 16})); // 6.4
+  console.log('result', math.eval(expr, {x : 16})); // 6.4
 </script>
 
 </body>

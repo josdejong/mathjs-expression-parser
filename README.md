@@ -1,3 +1,18 @@
+# This package has been deprecated
+
+You can now use mathjs itself directly to achieve the same:
+
+```js
+// use light-weight, numbers only implementations of all functions
+import { create, all } from 'mathjs/number'
+
+const math = create(all)
+console.log(add(2, 3)) // 5
+```
+
+Read more: https://mathjs.org/docs/custom_bundling.html#numbers-only
+
+
 # mathjs-expression-parser
 
 Just want to use the expression parser of `mathjs` for simple, numeric calculations? Here you go...
